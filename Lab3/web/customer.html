@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+	<title>JSP Example</title>
+</head>
+<body>
+	<h1>Use JSP Scriptlet and JSP Expression in application</h1>
+	<h2><font color="blue">Customer Discount</font></h2>
+	<form action="processCustomer.jsp" method="post">
+		<table>
+			<tr>
+				<td><label for="customerCode">Customer Code:</label></td>
+				<td><input type="text" id="customerCode" name="cust_no" value="key-in customer code"></td>
+			</tr>
+			<tr>
+				<td><label for="quantity">Quantity:</label></td>
+				<td><input type="text" id="quantity" name="quantity" value="key-in quantity"></td>
+			</tr>
+			<tr>
+				<td><label for="customerType">Customer Type:</label></td>
+				<td>
+					<input type="radio" id="normal" name="cust_type" value="1">
+					<label for="normal">Normal Customer</label>
+					<input type="radio" id="privilege" name="cust_type" value="2">
+					<label for="privilege">Privilege Customer</label>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Submit">
+					<input type="reset" value="Cancel">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
